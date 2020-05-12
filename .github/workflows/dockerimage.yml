@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag pranavbhatia/testimage:$(date +%s)
+      run: docker build . --file Dockerfile --tag pranavbhatia/testimage:0.1
     - name: Push the docker image
-      run: docker push pranavbhatia/testimage:$(date +%s)
+      run: docker push pranavbhatia/testimage:0.1
 
