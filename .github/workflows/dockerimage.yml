@@ -17,5 +17,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag pranavbhatia/testimage:$(date +%s)
     - name: Push the docker image
-      run: docker push pranavbhatia/test:$(date +%s)
+      run: docker push pranavbhatia/testimage:$(date +%s)
 
