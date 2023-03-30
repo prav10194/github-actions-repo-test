@@ -17,7 +17,7 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag pranavbhatia/testimage:0.1
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: pranavbhatia/testimage:0.1
         username: ${{ secrets.DOCKER_USERNAME }}
